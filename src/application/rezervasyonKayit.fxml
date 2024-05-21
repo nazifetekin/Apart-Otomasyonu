@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.rezervasyonKayitController">
+   <children>
+      <AnchorPane prefHeight="84.0" prefWidth="603.0" style="-fx-background-color: #778899;">
+         <children>
+            <Label layoutX="222.0" layoutY="24.0" prefHeight="37.0" prefWidth="171.0" text="Öğrenci Kayıt" textFill="WHITE">
+               <font>
+                  <Font name="Big Caslon Medium" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="19.0" layoutY="100.0" prefHeight="336.0" prefWidth="565.0" style="-fx-background-color: #778899;">
+         <children>
+            <Label layoutX="12.0" layoutY="37.0" prefHeight="18.0" prefWidth="102.0" text="Ad-Soyad" textAlignment="RIGHT" textFill="WHITE" />
+            <Label alignment="TOP_LEFT" layoutX="13.0" layoutY="78.0" prefHeight="18.0" prefWidth="102.0" text="Tc Numarası" textFill="WHITE" />
+            <Label alignment="TOP_LEFT" layoutX="12.0" layoutY="154.0" prefHeight="18.0" prefWidth="102.0" text="Üniversite Adı" textAlignment="JUSTIFY" textFill="WHITE" />
+            <Label alignment="TOP_LEFT" layoutX="12.0" layoutY="191.0" prefHeight="18.0" prefWidth="102.0" text=" Bölüm" textAlignment="CENTER" textFill="WHITE" />
+            <Label alignment="TOP_LEFT" layoutX="13.0" layoutY="120.0" prefHeight="18.0" prefWidth="102.0" text="Telefon No" textFill="WHITE" />
+            <TextField fx:id="adText" layoutX="114.0" layoutY="32.0" onAction="#adText" prefHeight="27.0" prefWidth="162.0" promptText="Ayşe Tekin" />
+            <TextField fx:id="tcText" layoutX="114.0" layoutY="73.0" prefHeight="27.0" prefWidth="162.0" promptText="21961056798" />
+            <TextField fx:id="telefonText" layoutX="114.0" layoutY="115.0" prefHeight="27.0" prefWidth="162.0" promptText="05658952977" />
+            <TextField fx:id="uniText" layoutX="114.0" layoutY="149.0" prefHeight="27.0" prefWidth="162.0" promptText="Mersin Üniversitesi" />
+            <TextField fx:id="bolumText" layoutX="114.0" layoutY="186.0" prefHeight="27.0" prefWidth="162.0" promptText="Tıp Fakültesi" />
+            <Label alignment="TOP_LEFT" layoutX="295.0" layoutY="78.0" prefHeight="18.0" prefWidth="102.0" text="Giriş Tarihi" textAlignment="RIGHT" textFill="WHITE" />
+            <Label alignment="TOP_LEFT" layoutX="295.0" layoutY="120.0" prefHeight="18.0" prefWidth="102.0" text="Çıkış Tarihi" textAlignment="RIGHT" textFill="WHITE" />
+            <DatePicker fx:id="girisDate" layoutX="381.0" layoutY="74.0" promptText="01.01.2024">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></DatePicker>
+            <DatePicker fx:id="cikisDate" layoutX="381.0" layoutY="115.0" promptText="05.02.2024" />
+            <Label layoutX="295.0" layoutY="154.0" prefHeight="18.0" prefWidth="102.0" text="Tutar" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="tutarText" layoutX="381.0" layoutY="149.0" prefHeight="27.0" prefWidth="178.0" promptText="0" />
+            <Button fx:id="btn_ekle" layoutX="310.0" layoutY="263.0" mnemonicParsing="false" onAction="#btn_ekle_Click" prefHeight="37.0" prefWidth="95.0" style="-fx-border-radius: 4px; -fx-border-width: 0px 2px 2px 0px; -fx-border-color: #b22222; -fx-background-color: #008000;" text="Ekle" textFill="WHITE" />
+            <Button fx:id="btn_temizle" layoutX="437.0" layoutY="263.0" mnemonicParsing="false" onAction="#btn_temizle_Click" prefHeight="37.0" prefWidth="95.0" style="-fx-border-radius: 4px; -fx-border-width: 0px 2px 2px 0px; -fx-border-color: #b22222; -fx-background-color: #b0c4de;" text="Temizle" textFill="WHITE" />
+            <Label alignment="TOP_LEFT" layoutX="295.0" layoutY="37.0" text="Daire" textFill="WHITE">
+               <font>
+                  <Font name="Big Caslon Medium" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="daireCombo" layoutX="382.0" layoutY="32.0" onAction="#daireCombo_Action" prefHeight="27.0" prefWidth="178.0" style="-fx-background-color: white;" />
+            <Label layoutX="295.0" layoutY="191.0" text="Ödeme Şekli" textFill="WHITE" />
+            <RadioButton fx:id="nakitRadio" layoutX="382.0" layoutY="191.0" mnemonicParsing="false" text="Nakit" textFill="WHITE">
+               <font>
+                  <Font name="Big Caslon Medium" size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="krediRadio" layoutX="470.0" layoutY="191.0" mnemonicParsing="false" text="Kredi Kartı" textFill="WHITE">
+               <font>
+                  <Font name="Big Caslon Medium" size="13.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

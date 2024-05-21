@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.odalarController">
+   <children>
+      <AnchorPane prefHeight="87.0" prefWidth="600.0" style="-fx-background-color: #778899;">
+         <children>
+            <Label layoutX="257.0" layoutY="31.0" text="Odalar" textFill="WHITE">
+               <font>
+                  <Font name="Big Caslon Medium" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="buttonPane" layoutX="9.0" layoutY="98.0" prefHeight="340.0" prefWidth="582.0" style="-fx-background-color: #778899;">
+         <children>
+            <Label layoutX="79.0" layoutY="14.0" text="1.KAT" textFill="#f5f5f5">
+               <font>
+                  <Font name="Big Caslon Medium" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="467.0" layoutY="14.0" text="3.KAT" textFill="#f5f5f5">
+               <font>
+                  <Font name="Big Caslon Medium" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="265.0" layoutY="14.0" text="2.KAT" textFill="#f5f5f5">
+               <font>
+                  <Font name="Big Caslon Medium" size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="d3btn" layoutX="25.0" layoutY="151.0" mnemonicParsing="false" onAction="#d3btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 3" />
+            <Button fx:id="d5btn" layoutX="25.0" layoutY="215.0" mnemonicParsing="false" onAction="#d5btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 5" />
+            <Button fx:id="d1btn" layoutX="25.0" layoutY="88.0" mnemonicParsing="false" onAction="#d1btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 1" />
+            <Button fx:id="d2btn" layoutX="108.0" layoutY="88.0" mnemonicParsing="false" onAction="#d2btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 2" />
+            <Button fx:id="d4btn" layoutX="108.0" layoutY="151.0" mnemonicParsing="false" onAction="#d4btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 4" />
+            <Button fx:id="d6btn" layoutX="108.0" layoutY="215.0" mnemonicParsing="false" onAction="#d6btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 6" />
+            <Button fx:id="d7btn" layoutX="217.0" layoutY="88.0" mnemonicParsing="false" onAction="#d7btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 7" />
+            <Button fx:id="d9btn" layoutX="217.0" layoutY="151.0" mnemonicParsing="false" onAction="#d9btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 9" />
+            <Button fx:id="d11btn" layoutX="217.0" layoutY="215.0" mnemonicParsing="false" onAction="#d11btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 11" />
+            <Button fx:id="d8btn" layoutX="300.0" layoutY="88.0" mnemonicParsing="false" onAction="#d8btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 8" />
+            <Button fx:id="d10btn" layoutX="300.0" layoutY="151.0" mnemonicParsing="false" onAction="#d10btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 10">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="d13btn" layoutX="417.0" layoutY="88.0" mnemonicParsing="false" onAction="#d13btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 13">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="d12btn" layoutX="300.0" layoutY="215.0" mnemonicParsing="false" onAction="#d12btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 12" />
+            <Button fx:id="d18btn" layoutX="499.0" layoutY="215.0" mnemonicParsing="false" onAction="#d18btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 18">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="d17btn" layoutX="417.0" layoutY="215.0" mnemonicParsing="false" onAction="#d17btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 17" />
+            <Button fx:id="d16btn" layoutX="499.0" layoutY="151.0" mnemonicParsing="false" onAction="#d16btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 16">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="d15btn" layoutX="417.0" layoutY="151.0" mnemonicParsing="false" onAction="#d15btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 15">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="d14btn" layoutX="499.0" layoutY="88.0" mnemonicParsing="false" onAction="#d14btn_Click" prefHeight="38.0" prefWidth="70.0" text="Daire 14">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

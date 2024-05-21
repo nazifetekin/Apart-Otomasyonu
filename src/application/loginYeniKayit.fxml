@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="350.0" prefWidth="350.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="application.loginYeniKayitController">
+   <children>
+      <ImageView blendMode="MULTIPLY" fitHeight="109.0" fitWidth="97.0" layoutX="120.0" layoutY="35.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Desktop/login.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="logAd_text" layoutX="69.0" layoutY="169.0" prefHeight="34.0" prefWidth="213.0" promptText="Kullanıcı Adı" style="-fx-border-color: #778899; -fx-border-radius: 6px; -fx-border-width: 0px 2px 0p 0px 0px 2px 0px;" />
+      <PasswordField fx:id="logSifre_text" layoutX="69.0" layoutY="217.0" prefHeight="34.0" prefWidth="213.0" promptText="Şifre" style="-fx-border-radius: 6px; -fx-border-width: 0px 2px 2px 0px; -fx-border-color: #778899;" />
+      <Button fx:id="btnKayit" layoutX="120.0" layoutY="272.0" mnemonicParsing="false" onAction="#btnKayit_Click" prefHeight="40.0" prefWidth="97.0" style="-fx-border-color: #778899; -fx-border-radius: 6px; -fx-background-color: #778899;" text="Kayıt Ol" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

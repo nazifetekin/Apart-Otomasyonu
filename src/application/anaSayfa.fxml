@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anaSayfaa" prefHeight="450.0" prefWidth="600.0" style="-fx-border-radius: 4px; -fx-border-width: 0px 2px 2px 0px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.anaSayfaController">
+   <children>
+      <ImageView fitHeight="332.0" fitWidth="600.0" layoutY="118.0" pickOnBounds="true" style="-fx-opacity: 0.3;">
+         <image>
+            <Image url="@../../../../Desktop/low-angle-residential-building-city_23-2148798616.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="120.0" prefWidth="600.0" style="-fx-background-color: #778899; -fx-border-radius: 1px; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #b22222;">
+         <children>
+            <Label layoutX="34.0" layoutY="37.0" prefHeight="46.0" prefWidth="242.0" text="Çiçek Apartı" textFill="WHITE">
+               <font>
+                  <Font name="Big Caslon Medium" size="41.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_cikis" layoutX="497.0" layoutY="47.0" mnemonicParsing="false" onAction="#btn_cikis_Click" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #b22222;" text="Çıkış" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Button fx:id="btn_odalar" layoutX="138.0" layoutY="324.0" mnemonicParsing="false" onAction="#btn_odalar_Click" prefHeight="81.0" prefWidth="123.0" style="-fx-background-color: #778899; -fx-border-width: 0px 2px 2px 0px; -fx-border-radius: 4px; -fx-border-color: #b22222;" text="Odalar" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_Rkayit" layoutX="138.0" layoutY="203.0" mnemonicParsing="false" onAction="#btn_Rkayit_Click" prefHeight="81.0" prefWidth="123.0" style="-fx-background-color: #778899; -fx-border-radius: 4px; -fx-border-width: 0px 2px 2px 0px; -fx-border-color: #b22222;" text="Rezervasyon Kayıt" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_Rcikis" layoutX="357.0" layoutY="203.0" mnemonicParsing="false" onAction="#btn_Rcikis_Click" prefHeight="81.0" prefWidth="123.0" style="-fx-background-color: #778899; -fx-border-width: 0px 2px 2px 0px; -fx-border-radius: 4px; -fx-border-color: #b22222;" text="Rezervasyon Çıkış" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_musteri" layoutX="357.0" layoutY="324.0" mnemonicParsing="false" onAction="#btn_musteri_Click" prefHeight="81.0" prefWidth="123.0" style="-fx-background-color: #778899; -fx-border-radius: 4px; -fx-border-width: 0px 2px 2px 0px; -fx-border-color: #b22222;" text="Rezervasyon Listele" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
